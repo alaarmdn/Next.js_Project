@@ -94,7 +94,7 @@ export default function SearchPage() {
         <div className="max-w-7xl mx-auto">
           {initialQuery && (
             <h1 className="text-3xl font-bold mb-8 text-gray-800">
-              Search Results for: "{initialQuery}"
+              Search Results for: &quot;{initialQuery}&quot;
             </h1>
           )}
 
@@ -110,7 +110,7 @@ export default function SearchPage() {
           ) : movies.length === 0 && initialQuery ? (
             <div className="text-center py-12 text-gray-800">
               <p className="text-lg">
-                No movies found for "{initialQuery}"
+                No movies found for &quot;{initialQuery}&quot;
               </p>
             </div>
           ) : movies.length === 0 && !initialQuery ? (
